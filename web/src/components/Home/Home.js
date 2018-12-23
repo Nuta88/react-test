@@ -8,15 +8,25 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Thumbnail  from 'react-bootstrap/lib/Thumbnail';
 import {NavLink} from "react-router-dom";
-import {getPost} from '../../actions';
+import {getPost} from "../../actions";
+import {browserHistory} from 'react-router';
 
 const mapStateToProps = state => {
     return {
         posts: state.posts
     }
 };
+    const mapDispatchToProps = (dispatch, ownProps) => {
+        return {
+            onPostClick: (id) => {
+                if(id) {
+                    dispatch(getPost(id));
+                }
+            }
+        }
+    };
 
-const Home = ({posts}) => (
+const Home = ({posts, onPostClick}) => (
     <Grid>
         <Row className="row-flex">
             {posts.map((post, index) =>
@@ -25,7 +35,8 @@ const Home = ({posts}) => (
                      lg={4}
                      key={index}
                      className="col-indent">
-                    <NavLink to={`/post/${post.id}`}>
+                    <NavLink onClick={() => onPostClick(post.id)}
+                              to={`/post/${post.id}`}>
                         <Thumbnail src={postImg}
                                    className="card">
                             <div className="card-content">
@@ -52,5 +63,6 @@ Home.propTypes = {
 };
 
 export default connect(
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
 )(Home)

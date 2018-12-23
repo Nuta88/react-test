@@ -18,8 +18,15 @@ export const getPosts = () => dispatch => {
 };
 
 export const getPost = (id) => dispatch => {
-    console.log(id);
     service.getPost(id).then(post => {
-        dispatch(receivePost(post.data));
+        let currentPost = post.data;
+        service.getCommentsBy(id).then(res=>{
+            currentPost =  {...currentPost, comments: res.data};
+            service.getUserBy(post.data.userId).then(res=>{
+                currentPost = {...currentPost, name: res.data.name};
+                console.log(currentPost);
+                dispatch(receivePost(currentPost));
+            });
+        });
     })
 };

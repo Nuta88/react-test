@@ -1,0 +1,38 @@
+.main-container {
+  min-height: 100vh;
+  padding: 0 1rem;
+  margin-bottom: 6rem;
+  background-color: rgba(221,223,228, .5);
+
+  .info {
+    align-self: center;
+    text-align: left;
+    &-name{
+      text-transform: uppercase;
+    }
+  }
+
+  .post {
+    margin-bottom: 5rem;
+    text-align: justify;
+  }
+
+  .comments {
+    margin: 2rem 0 4rem 0;
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    .comment {
+      margin-bottom: 4rem;
+      &-title {
+        font-size: 2rem;
+      }
+      &-body {
+        font-size: 1.5rem;
+        text-align: justify;
+      }
+    }
+
+  }
+}

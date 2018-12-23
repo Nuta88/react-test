@@ -1,9 +1,6 @@
 const post = (state = [], action) => {
     if(action.type === 'RECEIVE_POST') {
-        return [
-            ...state,
-            action.post
-        ]
+        return action.post
     }
     return state
 };
