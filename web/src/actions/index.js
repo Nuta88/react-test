@@ -24,7 +24,6 @@ export const getPost = (id) => dispatch => {
             currentPost =  {...currentPost, comments: res.data};
             service.getUserBy(post.data.userId).then(res=>{
                 currentPost = {...currentPost, name: res.data.name};
-                console.log(currentPost);
                 dispatch(receivePost(currentPost));
             });
         });

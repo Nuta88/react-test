@@ -11,13 +11,13 @@ class Footer extends Component {
                     <NavLink to="/about"
                              activeStyle={{
                                  textDecoration: 'none',
-                                 color: 'black'
+                                 color: '#0a33ba'
                              }}
                              className="footer--nav-item pointer">About</NavLink>
                     <NavLink to="/contact"
                              activeStyle={{
                                  textDecoration: 'none',
-                                 color: 'black'
+                                 color: '#0a33ba'
                              }}
                              className="footer--nav-item pointer">Contact</NavLink>
                 </ul>

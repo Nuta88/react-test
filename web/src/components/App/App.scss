@@ -16,17 +16,8 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-font {
+  color: black;
 }
 
 .pointer {
@@ -35,6 +26,10 @@
 
 .indent {
   padding: 2rem 0;
+}
+
+.mb {
+  margin-bottom: 6rem;
 }
 
 .row-flex {
