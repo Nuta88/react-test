@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 const api = 'https://jsonplaceholder.typicode.com';
 
 export function getAllPost() {

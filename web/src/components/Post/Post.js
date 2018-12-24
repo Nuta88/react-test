@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App/App.scss';
 import {connect} from 'react-redux';
 import {getPost} from '../../actions';
@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Image from 'react-bootstrap/lib/Image';
 import postImg from "../../assets/img/Post-Bank.jpg";
-import './Post.scss'
+import './Post.scss';
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {

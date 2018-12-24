@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PaperPost from '../../assets/img/paper-post.png';
-import '../App/App.scss'
+import '../App/App.scss';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import '../App/App.scss'
-import './Footer.scss'
+import '../App/App.scss';
+import './Footer.scss';
 import {NavLink} from "react-router-dom";
 
 class Footer extends Component {

@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.scss';
-import Header from '../Header/Header'
-import Post from '../Post/Post'
-import About from '../About/About'
-import Home from '../Home/Home'
-import Contact from '../Contact/Contact'
-import Footer from '../Footer/Footer'
-import Error from '../Error/Error'
-import * as service from '../../service/postService'
+import Header from '../Header/Header';
+import Post from '../Post/Post';
+import About from '../About/About';
+import Home from '../Home/Home';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
+import Error from '../Error/Error';
+import * as service from '../../service/postService';
 
 class App extends Component {
     render() {

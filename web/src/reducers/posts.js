@@ -3,9 +3,9 @@ const posts = (state = [], action) => {
         return [
             ...state,
             ...action.posts
-        ]
+        ];
     }
-    return state
+    return state;
 };
 
 export default posts
